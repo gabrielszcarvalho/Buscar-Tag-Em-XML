@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 883
-  Top = 585
-  Width = 659
-  Height = 263
+  Left = 357
+  Top = 383
+  Width = 730
+  Height = 297
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,9 +16,9 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 135
+    Width = 81
     Height = 13
-    Caption = 'Cole o XML de retorno aqui::'
+    Caption = 'Cole o XML aqui:'
   end
   object Label2: TLabel
     Left = 336
@@ -29,16 +29,23 @@ object Form1: TForm1
   end
   object Label3: TLabel
     Left = 336
-    Top = 96
+    Top = 128
     Width = 41
     Height = 13
     Caption = 'Retorno:'
+  end
+  object Label4: TLabel
+    Left = 648
+    Top = 8
+    Width = 55
+    Height = 13
+    Caption = 'Ocorrencia:'
   end
   object tbXMLRET: TMemo
     Left = 8
     Top = 24
     Width = 321
-    Height = 185
+    Height = 209
     TabOrder = 0
   end
   object tbTag: TEdit
@@ -68,9 +75,34 @@ object Form1: TForm1
   end
   object mmRet: TMemo
     Left = 336
-    Top = 120
+    Top = 152
     Width = 297
     Height = 89
     TabOrder = 4
+  end
+  object btnProxOcorrencia: TButton
+    Left = 336
+    Top = 88
+    Width = 145
+    Height = 25
+    Caption = 'Pr'#243'xima Ocorr'#234'ncia'
+    TabOrder = 5
+    OnClick = btnProxOcorrenciaClick
+  end
+  object btnVoltarOcorrencia: TButton
+    Left = 488
+    Top = 88
+    Width = 145
+    Height = 25
+    Caption = 'Voltar Ocorr'#234'ncia'
+    TabOrder = 6
+    OnClick = btnVoltarOcorrenciaClick
+  end
+  object tbOcorrencia: TEdit
+    Left = 648
+    Top = 24
+    Width = 57
+    Height = 21
+    TabOrder = 7
   end
 end
